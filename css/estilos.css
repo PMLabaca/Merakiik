@@ -1,0 +1,234 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    position:relative;
+}
+.contenedor1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px 1fr 0.5fr;
+    grid-template-areas: 
+    "header header"
+    /* "navegacion navegacion" */
+    "section section"
+    "footer footer";
+    grid-row-gap: 10px;
+}
+@media screen and (max-width: 500px){
+    .contenedor1{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+    }
+}
+.navegacion{
+    grid-area: navegacion;
+    align-self: flex-end;
+}
+header{
+    z-index: 1000;
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    grid-area: header;
+}
+.indexSection{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+    display:flex;
+    justify-content: space-evenly;
+}
+.indexImagen{
+    display: flex;
+    justify-content: center;
+}
+.imagenLogo{
+    width: 80px;
+    height: 60px;
+    display: inline-block;
+}
+.logoMeraki{
+    display: inline-block;
+}
+.navegacion ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+.navegacion li a{
+    text-decoration: none;
+    color: grey;
+}
+.navegacion ul{
+    text-align: center;
+}
+.titulo h3{
+    font-weight: bold;
+    text-align: center;
+}
+.titulo p{
+    text-align: center;
+}
+.imgPrincipal{
+    width: 700px;
+    height: 600px;
+}
+.fondoFooter{
+    background-color: beige;
+}
+.instagram{
+    width: 55px;
+    height: 55px;
+    display: block;
+}
+.tiktok{
+    width: 55px;
+    height: 55px;
+    display: block;
+}
+.whatsapp{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 94%;
+    top: 92%;
+    position: fixed;
+
+}
+.tiendaMeraki{
+    width: 55px;
+    height: 55px;
+}
+
+/* CONTACTO */
+
+.mainContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+}
+.mainContacto div{
+    padding-bottom: 10px;
+}
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-row-gap: 10px;
+}
+@media screen and (max-width: 500px){
+    .contenedor4{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+
+/* GALERIA */
+
+.mainGaleria{
+    grid-area: main;
+}
+.contenedor5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-row-gap: 10px;
+}
+@media screen and (max-width: 500px){
+    .contenedor5{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+.divGaleria{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bodys1{
+    height: 300px;
+}
+.bombis1{
+    height: 300px;
+}
+.conjunto1{
+    height: 300px;
+}
+
+/* NOSOTROS */
+
+.contenedor2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px 1fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    grid-row-gap: 10px;
+}
+.mainNosotros{
+    display: flex;
+    justify-content: center;
+    grid-area: main;
+}
+.parrafoN{
+    line-height: 2;
+}
+@media screen and (max-width: 500px){
+    .contenedor2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+
+/* CUIDADOS */
+
+.mainCuidados{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+.contenedor3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px 1fr 0.5fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-row-gap: 10px;
+}
+.parrafoC{
+    line-height: 2;
+}
+@media screen and (max-width: 500px){
+    .contenedor3{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+
+
