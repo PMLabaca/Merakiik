@@ -8,7 +8,6 @@ body{
     grid-template-rows: 125px 1fr 0.5fr;
     grid-template-areas: 
     "header header"
-    /* "navegacion navegacion" */
     "section section"
     "footer footer";
     grid-row-gap: 10px;
@@ -21,6 +20,17 @@ body{
         "section"
         "footer";
     }
+}
+h1{
+    color: rgba(170, 206, 117, 0.76);
+}
+h3{
+    color: rgba(170, 206, 117, 0.76);
+}
+h4{
+   color: grey;
+   position: relative;
+   left: 50%;
 }
 .navegacion{
     grid-area: navegacion;
@@ -161,12 +171,24 @@ footer{
 }
 .bodys1{
     height: 300px;
+    transition: height 1s, width 1s;
+}
+.bodys1:hover{
+    height: 500px;
 }
 .bombis1{
     height: 300px;
+    transition: height 1s, width 1s;
+}
+.bombis1:hover{
+    height: 500px;
 }
 .conjunto1{
     height: 300px;
+    transition: height 1s, width 1s;
+}
+.conjunto1:hover{
+    height: 500px;
 }
 
 /* NOSOTROS */
