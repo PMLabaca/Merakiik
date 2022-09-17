@@ -1,7 +1,11 @@
 body{
     font-family: 'Roboto', sans-serif;
     position:relative;
+    margin: 0%;
 }
+
+/* INDEX */
+
 .contenedor1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -225,10 +229,10 @@ footer{
 
 .mainCuidados{
     grid-area: main;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
-.contenedor3{
+/* .contenedor3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 125px 1fr 0.5fr;
@@ -249,6 +253,14 @@ footer{
         "main"
         "footer";
     }
+} */
+.accordion-item{
+    padding-bottom: 150px;  
 }
+.accordion-body{
+    display: flex;
+    justify-content: center;
+}
+
 
 

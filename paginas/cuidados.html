@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
     <div class="contenedor3">
         <header>
-            <img src="../multimedia/LOGO.png" alt="" class="imagenLogo">
+            <!-- <img src="../multimedia/LOGO.png" alt="" class="imagenLogo">
             <h1 class="logoMeraki">Meraki</h1>
             <nav class="navegacion">
                 <ul>
@@ -23,10 +24,42 @@
                     <li><a href="contacto.html ">CONTACTO</a></li>     
                     <li><a href="../index.html">INICIO</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="../multimedia/LOGO.png" alt="Logo" width="80" class="d-inline-block align-text-center">
+                    Meraki
+                  </a>
+                </div>
+              </nav>
+              <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cuidados.html">Cuidados</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main class="mainCuidados">
-            <p class="parrafoC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga perferendis distinctio accusamus vitae consectetur ex voluptatem necessitatibus praesentium ad aperiam, in corporis tempore quisquam, commodi nisi dolores assumenda hic?
+            <!-- <p class="parrafoC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga perferendis distinctio accusamus vitae consectetur ex voluptatem necessitatibus praesentium ad aperiam, in corporis tempore quisquam, commodi nisi dolores assumenda hic?
             Nemo sunt repudiandae aperiam tenetur quod, consequuntur dolorum ea consequatur nihil incidunt inventore tempora ad, commodi aspernatur, veritatis placeat pariatur minus natus recusandae! Laborum accusantium eum, assumenda id rerum nam!
             Reiciendis assumenda inventore est at magnam quod quos atque delectus, laboriosam soluta eos culpa quis itaque eveniet iste voluptate eum aspernatur deleniti mollitia odit beatae minima cumque commodi. Tempora, mollitia.
             Labore ea cumque illo, ratione saepe, repellat officiis iure explicabo consectetur natus qui provident beatae soluta similique molestiae quas sapiente nisi fugiat sequi? Commodi, recusandae illum dolore laboriosam nulla veritatis.
@@ -45,9 +78,51 @@
             Aliquid rem veniam, ipsam quasi quo magni libero iure animi sed ipsum maiores architecto rerum assumenda voluptatem fuga? Officiis delectus minima ad cum rerum nemo labore quibusdam. Voluptatum, quod illo?
             Tenetur, accusantium quidem. Dolorem non harum tempore, ab placeat in laboriosam sit ducimus sunt, exercitationem tenetur laudantium, quaerat quas? Incidunt libero pariatur provident culpa. Neque similique qui illum veniam hic.
             Eveniet vitae corrupti eaque ducimus maiores ipsam reprehenderit facere aperiam. Saepe nesciunt aut nobis quibusdam excepturi sequi eaque debitis id laudantium? Nesciunt soluta suscipit aperiam obcaecati eos molestiae minima ipsum.
-            Enim doloribus totam blanditiis delectus praesentium, atque dicta fuga amet, quasi earum sapiente, reprehenderit autem odit facere exercitationem porro rerum aut molestias molestiae officiis veniam dignissimos qui. Adipisci, rerum distinctio.</p>
+            Enim doloribus totam blanditiis delectus praesentium, atque dicta fuga amet, quasi earum sapiente, reprehenderit autem odit facere exercitationem porro rerum aut molestias molestiae officiis veniam dignissimos qui. Adipisci, rerum distinctio.</p> -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Pequeña Observacion
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">- La mayoria de nuestras prendas son hechas a MANO! Son piezas delicadas y es importante que las cuides con el mismo amor que fueron hechas.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Recomendacion #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Es conveniente lavarlas a mano con agua fria o tibia y con jabon neutro. Recomendamos que las seques en superficies planas y NO retorcer la prenda .</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Recomendacion #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Si usas lavarropas, recorda programarlo en enjuage delicado y NO USAR SECARROPAS  , tambien si tienen , recomendamos usar las bolsitas  de red para lavar la ropa interior y que no se estropee! Las prendas claras solo deben ser lavadas con prendas claras, si no pueden alterar su color .</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        AVISO
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">En Meraki no podemos asumir la responsabilidad de las prendas que se arruinaron o dañaron debido a la mala antencion en el lavado y su manipulacion. cualquier consulta contactanos en merakiik.oficial@gmail.com </div>
+                    </div>
+                  </div>
+              </div>
         </main>
-        <footer class="fondoFooter">
+<!--         <footer class="fondoFooter">
             <div>
                 <h3>REDES SOCIALES</h3>
                 <img src="../multimedia/instagram.jpeg" alt="" class="instagram">
@@ -58,7 +133,45 @@
                 <h3>TIENDA MERAKI</h3>
             <a href="https://www.merakiik.com/" target="_blank"><img src="../multimedia/carrito.png" alt="" class="tiendaMeraki"></a>
             </div>
+        </footer> -->
+        <footer>
+          <div class="container-fluid">
+            <div class="row p-5 bg-secondary">
+
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h5">Navegacion</p>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="nosotros.html">NOSOTROS</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="galeria.html">GALERIA</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="contacto.html ">CONTACTO</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="../index.html">INICIO</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4"> 
+                <p class="h5">Redes Sociales</p>
+                <div class="mb-2">
+                  <a href="https://www.instagram.com/meraki.ik/"><img src="../multimedia/instagram.jpeg" alt="" class="instagram"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="https://www.tiktok.com/@merakiik"><img src="../multimedia/tik tok.png" alt="" class="tiktok"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h5">TIENDA Meraki</p>
+                <div class="mb-2">
+                  <a href="https://www.merakiik.com/"><img src="../multimedia/carrito.png" alt="" class="tiendaMeraki"></a>
+                </div>
+              </div>
         </footer>
-    </div>    
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
 </body>
 </html>

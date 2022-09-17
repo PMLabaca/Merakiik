@@ -10,28 +10,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head >
 <body>
     <div class="contenedor1">
         <header>
-            <img src="multimedia/LOGO.png" alt="" class="imagenLogo">
-            <h1 class="logoMeraki">Meraki</h1>
-            <nav class="navegacion">
+<!--             <img src="multimedia/LOGO.png" alt="" class="imagenLogo">
+            <h1 class="logoMeraki">Meraki</h1> -->
+            <!--             <nav class="navegacion">
                 <ul>
                     <li><a href="paginas/nosotros.html">NOSOTROS</a></li>
                     <li><a href="paginas/galeria.html">GALERIA</a></li>     
                     <li><a href="paginas/contacto.html ">CONTACTO</a></li>     
                     <li><a href="paginas/cuidados.html">CUIDADOS</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="multimedia/LOGO.png" alt="Logo" width="80" class="d-inline-block align-text-center">
+                    Meraki
+                  </a>
+                </div>
+              </nav>
+              <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="paginas/contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="paginas/cuidados.html">Cuidados</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="paginas/galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="paginas/nosotros.html">Nosotros</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
-<!--         <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eius, omnis corrupti laboriosam vero esse maiores illum cupiditate. Quia in sequi mollitia maiores illo aliquid aspernatur perspiciatis ad, soluta quis.
-            Quidem, vero? Doloribus recusandae sed minus corporis. Obcaecati, dignissimos veritatis vel eum cupiditate alias sed ex repudiandae, nulla quia provident temporibus laboriosam consectetur quo iusto officia magnam quas voluptatibus libero!
-            Nisi, omnis aspernatur, voluptatum autem magni vitae soluta hic non labore, quae cum ea quos reiciendis praesentium libero cupiditate sint? Sequi, ratione maiores cum minima deleniti fugit dolor saepe exercitationem.
-            Deleniti sed labore magnam maxime minus iste accusamus corporis, harum vel libero a maiores ullam nobis sunt eligendi. Praesentium accusamus consequatur tenetur voluptatibus totam nemo odit eligendi veniam sunt soluta?
-            Magni repudiandae asperiores, odit pariatur mollitia amet nulla cum quaerat debitis, earum qui voluptate vel possimus laboriosam error quasi distinctio. Omnis soluta nulla sit fugit aspernatur iusto deleniti est atque?
-        </div> -->
         <section class="indexSection">
             <article class="titulo"><h3>BIENVENIDX AL #TEAMMK</h3>
                 <p>Dato un mimo y regálate eso que tanto te gusta ! sentirnos sexys y
@@ -41,7 +67,7 @@
                 </div>
             </article>
         </section>
-        <footer>
+        <!-- <footer>
                 <div>
                     <h3>REDES SOCIALES</h3>
                     <img src="multimedia/instagram.jpeg" alt="" class="instagram">
@@ -52,7 +78,46 @@
                     <h3>TIENDA MERAKI</h3>
                 <a href="https://www.merakiik.com/" target="_blank"><img src="multimedia/carrito.png" alt="" class="tiendaMeraki"></a>
                 </div>   
+        </footer> -->
+        <footer>
+          <div class="container-fluid">
+            <div class="row p-5 bg-secondary">
+
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h5">Navegacion</p>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="paginas/nosotros.html">NOSOTROS</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="paginas/galeria.html">GALERIA</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="paginas/contacto.html ">CONTACTO</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="paginas/cuidados.html">CUIDADOS</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-white text-decoration-none" href="index.html">INICIO</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4"> 
+                <p class="h5">Redes Sociales</p>
+                <div class="mb-2">
+                  <a href="https://www.instagram.com/meraki.ik/"><img src="../multimedia/instagram.jpeg" alt="" class="instagram"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="https://www.tiktok.com/@merakiik"><img src="../multimedia/tik tok.png" alt="" class="tiktok"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h5">TIENDA Meraki</p>
+                <div class="mb-2">
+                  <a href="https://www.merakiik.com/"><img src="../multimedia/carrito.png" alt="" class="tiendaMeraki"></a>
+                </div>
+              </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
