@@ -1,0 +1,95 @@
+.navegacion {
+  grid-area: navegacion;
+  align-self: flex-end; }
+  .navegacion ul {
+    text-align: center; }
+    .navegacion ul li {
+      display: inline-block;
+      margin-right: 25px; }
+  .navegacion li a {
+    text-decoration: none;
+    color: grey; }
+
+.titulo h3 {
+  font-weight: bold;
+  text-align: center; }
+
+.titulo p {
+  text-align: center; }
+
+.imgPrincipal {
+  width: 700px;
+  height: 600px; }
+
+.indexSection {
+  grid-area: section; }
+  .indexSection .indexImagen {
+    display: flex;
+    justify-content: center; }
+    .indexSection .indexImagen .imgPrincipal {
+      width: 700px;
+      height: 600px; }
+
+.imagenLogo {
+  width: 80px;
+  height: 60px;
+  display: inline-block; }
+
+.logoMeraki {
+  display: inline-block; }
+
+.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 125px 1fr 0.5fr; */
+  grid-template-areas: "header header" "section section" "footer footer";
+  grid-row-gap: 10px; }
+
+@media screen and (max-width: 500px) {
+  .contenedor1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "section" "footer"; } }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  /* background: linear-gradient(155deg, rgba(245,245,220,1) 35%, rgba(255,255,255,1) 100%); */ }
+  footer .instagram {
+    width: 55px;
+    height: 55px;
+    display: block; }
+  footer .tiktok {
+    width: 55px;
+    height: 55px;
+    display: block; }
+  footer .whatsapp {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 94%;
+    top: 92%;
+    position: fixed; }
+  footer .tiendaMeraki {
+    width: 55px;
+    height: 55px; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin: 0%; }
+  body h1 {
+    color: rgba(170, 206, 117, 0.76); }
+  body h3 {
+    color: rgba(170, 206, 117, 0.76); }
+  body h4 {
+    color: grey;
+    display: flex;
+    justify-content: center; }
+
+header {
+  z-index: 1000;
+  background: linear-gradient(315deg, beige 35%, white 100%);
+  position: sticky;
+  top: 0%;
+  grid-area: header; }

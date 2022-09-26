@@ -3,6 +3,30 @@ body{
     position:relative;
     margin: 0%;
 }
+h1{
+    color: rgba(170, 206, 117, 0.76);
+}
+h3{
+    color: rgba(170, 206, 117, 0.76);
+}
+h4{
+   color: grey;
+   display: flex;
+   justify-content: center;
+}
+header{
+    z-index: 1000;
+    background: linear-gradient(315deg, rgba(245,245,220,1) 35%, rgba(255,255,255,1) 100%);
+    position: sticky;
+    top: 0%;
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+    display:flex;
+    justify-content: space-evenly;
+    /* background: linear-gradient(155deg, rgba(245,245,220,1) 35%, rgba(255,255,255,1) 100%); */
+}
 
 /* INDEX */
 
@@ -25,37 +49,16 @@ body{
         "footer";
     }
 }
-h1{
-    color: rgba(170, 206, 117, 0.76);
-}
-h3{
-    color: rgba(170, 206, 117, 0.76);
-}
-h4{
-   color: grey;
-   display: flex;
-   justify-content: center;
-}
+
 .navegacion{
     grid-area: navegacion;
     align-self: flex-end;
 }
-header{
-    z-index: 1000;
-    background: linear-gradient(315deg, rgba(245,245,220,1) 35%, rgba(255,255,255,1) 100%);
-    position: sticky;
-    top: 0%;
-    grid-area: header;
-}
+
 .indexSection{
     grid-area: section;
 }
-footer{
-    grid-area: footer;
-    display:flex;
-    justify-content: space-evenly;
-    /* background: linear-gradient(155deg, rgba(245,245,220,1) 35%, rgba(255,255,255,1) 100%); */
-}
+
 .indexImagen{
     display: flex;
     justify-content: center;
@@ -68,7 +71,7 @@ footer{
 .logoMeraki{
     display: inline-block;
 }
-.navegacion ul li{
+/* .navegacion ul li{
     display: inline-block;
     margin-right: 25px;
 }
@@ -112,7 +115,7 @@ footer{
 .tiendaMeraki{
     width: 55px;
     height: 55px;
-}
+} */
 
 /* CONTACTO */
 
