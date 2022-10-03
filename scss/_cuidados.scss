@@ -1,0 +1,30 @@
+.mainCuidados{
+    grid-area: main;
+    .accordion-item{
+        padding-bottom: 150px;
+        .accordion-body{
+            display: flex;
+            justify-content: center;
+        }          
+    }
+}
+.contenedor3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 125px 1fr 0.5fr; */
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-row-gap: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .contenedor3{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}

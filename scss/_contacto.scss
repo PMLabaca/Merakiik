@@ -1,0 +1,28 @@
+.mainContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+    div{
+        padding-bottom: 10px;
+    }
+}
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-row-gap: 10px;
+}
+@media screen and (max-width: 500px){
+    .contenedor4{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}

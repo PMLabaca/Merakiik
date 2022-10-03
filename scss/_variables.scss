@@ -1,0 +1,34 @@
+@mixin block {
+    display: block;
+}
+$redes:(
+    ancho: 55px,
+    alto: 55px
+);
+.instagram{
+    width: map-get($redes, ancho);
+    height: map-get($redes, alto);
+    @include block;
+}
+.tiktok{
+    width: map-get($redes, ancho);
+    height: map-get($redes, alto);
+    @include block;
+}
+.whatsapp--location{
+    @extend .whatsapp;
+    width: map-get($redes, ancho);
+    height: map-get($redes, alto);
+    @include block;
+}
+.tiendaMeraki{
+    width: map-get($redes, ancho);
+    height: map-get($redes, alto);
+    @include block;
+}
+.whatsapp{
+    position: absolute;
+    left: 94%;
+    top: 92%;
+    position: fixed;
+}

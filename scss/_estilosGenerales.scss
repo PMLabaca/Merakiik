@@ -3,28 +3,12 @@ footer{
     display:flex;
     justify-content: space-evenly;
     /* background: linear-gradient(155deg, rgba(245,245,220,1) 35%, rgba(255,255,255,1) 100%); */
-    .instagram{
-        width: 55px;
-        height: 55px;
-        display: block;
-    }
-    .tiktok{
-        width: 55px;
-        height: 55px;
-        display: block;
-    }
     .whatsapp{
-        width: 55px;
-        height: 55px;
         position: absolute;
         left: 94%;
         top: 92%;
         position: fixed;
     
-    }
-    .tiendaMeraki{
-        width: 55px;
-        height: 55px;
     }
 }
 body{
