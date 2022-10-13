@@ -17,10 +17,6 @@
 .titulo p {
   text-align: center; }
 
-.imgPrincipal {
-  width: 700px;
-  height: 600px; }
-
 .indexSection {
   grid-area: section; }
   .indexSection .indexImagen {
@@ -28,7 +24,8 @@
     justify-content: center; }
     .indexSection .indexImagen .imgPrincipal {
       width: 700px;
-      height: 600px; }
+      height: 600px;
+      object-fit: cover; }
 
 .imagenLogo {
   width: 80px;
@@ -64,7 +61,8 @@ footer {
 body {
   font-family: 'Roboto', sans-serif;
   position: relative;
-  margin: 0%; }
+  margin: 0;
+  padding: 0; }
   body h1 {
     color: rgba(170, 206, 117, 0.76); }
   body h3 {
@@ -122,10 +120,13 @@ header {
     grid-template-areas: "header" "main" "footer"; } }
 
 .mainGaleria {
-  grid-area: main; }
+  grid-area: main;
+  box-sizing: border-box; }
   .mainGaleria .divGaleria {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    flex: 33%;
+    flex-wrap: wrap; }
     .mainGaleria .divGaleria .bodys1 {
       height: 300px;
       margin-bottom: 40px;
@@ -152,24 +153,33 @@ header {
   grid-template-areas: "header header" "main main" "footer footer";
   grid-row-gap: 10px; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .divGaleria {
+    flex: 50%; } }
+
+@media screen and (max-width: 480px) {
   .contenedor5 {
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer"; } }
+    grid-template-areas: "header" "main" "footer"; }
+  .divGaleria {
+    flex: 100%; } }
 
 .mainNosotros {
   display: flex;
   justify-content: center;
   grid-area: main; }
+  .mainNosotros .parrafoN {
+    line-height: 2;
+    text-align: center;
+    color: #b6b6b6; }
   .mainNosotros .imgNosotros {
     display: flex;
     justify-content: center; }
-    .mainNosotros .imgNosotros .parrafoN {
-      line-height: 2; }
     .mainNosotros .imgNosotros .imgNosotros1 {
       width: 470px;
       height: 600px;
-      margin-bottom: 20px; }
+      margin-bottom: 50px;
+      margin-top: 45px; }
 
 .contenedor2 {
   display: grid;

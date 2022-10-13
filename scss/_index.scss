@@ -22,10 +22,7 @@
         text-align: center; 
     }
 }
-.imgPrincipal{
-    width: 700px;
-    height: 600px;
-}
+
 .indexSection{
     grid-area: section;
     .indexImagen{
@@ -34,6 +31,7 @@
         .imgPrincipal{
             width: 700px;
             height: 600px;
+            object-fit: cover;
         }
     }
 }

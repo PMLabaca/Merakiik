@@ -1,8 +1,11 @@
 .mainGaleria{
     grid-area: main;
+    box-sizing: border-box;
     .divGaleria{
         display: flex;
         justify-content: space-evenly;
+        flex: 33%;
+        flex-wrap: wrap;
         .bodys1{
             height: 300px;
             margin-bottom: 40px;
@@ -39,12 +42,20 @@
     "footer footer";
     grid-row-gap: 10px;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
+    .divGaleria{
+        flex: 50%;
+    }
+}
+@media screen and (max-width: 480px){
     .contenedor5{
         grid-template-columns: 1fr;
         grid-template-areas: 
         "header"
         "main"
         "footer";
+    }
+    .divGaleria{
+        flex: 100%;
     }
 }
